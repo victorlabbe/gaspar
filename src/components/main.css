@@ -1,0 +1,54 @@
+/* src/components/main.css */
+.main {
+  background-color: #0611b3;
+  padding: 10px;
+}
+
+.main-list {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  position: relative; /* Necesario para posicionar el dropdown */
+}
+
+.main-list li {
+  position: relative; /* Necesario para que el dropdown se posicione correctamente */
+}
+
+.main-list li a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.main-list li a:hover {
+  color: #f7e010;
+}
+
+/* Estilos para el dropdown */
+.dropdown {
+  position: absolute;
+  top: 100%; /* Coloca el dropdown justo debajo del enlace */
+  left: 0;
+  background-color: #444;
+  list-style: none;
+  padding: 10px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  z-index: 1; /* Asegúrate de que esté por encima de otros elementos */
+}
+
+.dropdown li {
+  margin: 5px 0; /* Espacio entre los elementos del dropdown */
+}
+
+.dropdown li a {
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+}
+
+.dropdown li a:hover {
+  color: #ddd;
+}
